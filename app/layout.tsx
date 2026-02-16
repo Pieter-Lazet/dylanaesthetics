@@ -41,6 +41,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Analytics } from "@vercel/analytics/react";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,6 +54,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground selection:bg-gold-500/30 selection:text-gold-400`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

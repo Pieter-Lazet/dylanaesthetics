@@ -19,13 +19,7 @@ export default function HeroSection() {
             {/* Background Image / Parallax */}
             <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-[#050505] z-10" />
-                <Image
-                    src="/api/placeholder/1920/1080"
-                    alt="Gym Background"
-                    fill
-                    className="object-cover opacity-50 grayscale"
-                    priority
-                />
+
             </motion.div>
 
             {/* Content */}

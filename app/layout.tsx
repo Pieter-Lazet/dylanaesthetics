@@ -13,14 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dylanaesthetics.nl"),
   title: "Dylanaesthetics | Nieuwe Golf",
   description: "Officieel portfolio van Dylanaesthetics. Fitness, Lifestyle, Mindset. Sluit je aan bij de nieuwe golf.",
-  keywords: ["Dylanaesthetics", "Fitness", "Lifestyle", "Gym", "Motivation", "Nieuwe Golf", "New Wave"],
+  keywords: ["Dylanaesthetics", "Fitness", "Lifestyle", "Gym", "Motivation", "Nieuwe Golf", "New Wave", "Personal Training", "Coaching"],
   authors: [{ name: "Dylanaesthetics" }],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Dylan Aesthetics", // Black 'Dylan', Gold 'Aesthetics' handled by platform styling usually, text is plain.
+    title: "Dylanaesthetics | Nieuwe Golf",
     description: "Start een nieuwe golf. Fitness & Lifestyle.",
-    url: "https://dylanaesthetics.com", // Placeholder, updated on deploy
+    url: "https://www.dylanaesthetics.nl",
     siteName: "Dylanaesthetics",
     images: [
       {
@@ -35,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dylan Aesthetics",
+    title: "Dylanaesthetics | Nieuwe Golf",
     description: "Start een nieuwe golf.",
     images: ["/hero-image.png"],
   },
